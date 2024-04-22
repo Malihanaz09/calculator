@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <input type="checkbox" class="input-check" id="input-check">
+    <label for="input-check" class="toggle">
+   <span class="text off">off</span>
+   <span class="text on">on</span>
+</label>
+</div>
+    <div class="light"></div> 
+    <div class="main">
+      
+        <div>
+            <input type="text" name="" id="result">
+    </div>
+        <div>
+            <button class="NoBtn" onclick="clearResult()">C</button>
+            <button class="NoBtn" onclick="delResult()">Del</button>
+            <button class="NoBtn" onclick="getNumber('%')">%</button>
+            <button class="NoBtn" onclick="getNumber('/')">/</button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="getNumber('7')">7</button>
+            <button class="NoBtn"onclick="getNumber('8')">8</button>
+            <button class="NoBtn" onclick="getNumber('9')">9</button>
+            <button class="NoBtn" onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="getNumber('4')" >4</button>
+            <button class="NoBtn" onclick="getNumber('5')">5</button>
+            <button class="NoBtn" onclick="getNumber('6')">6</button>
+            <button class="NoBtn" onclick="getNumber('*')">X</button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="getNumber('1')">1</button>
+            <button class="NoBtn" onclick="getNumber('2')">2</button>
+            <button class="NoBtn" onclick="getNumber('3')">3</button>
+            <button class="NoBtn" onclick="getNumber('+')">+</button>
+        </div>
+        <div>
+            <button class="NoBtn" onclick="getNumber('0')">0</button>
+            <button class="NoBtn" onclick="getNumber('.')">.</button> 
+            <button class="resultBtn" onclick="getResult()">=</button>
+        </div>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
